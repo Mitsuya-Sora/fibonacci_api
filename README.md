@@ -48,7 +48,7 @@ PHPはunsigned intに対応しておらず、例n=99の時`218922995834555169026
 `{"status":400,"message":"Bad Request. Query parameter 'n' should be a natural number."}`
 
 
-## 実装において主に変更したファイル
+## 主要な機能の実装を用いたファイル
 
 https://github.com/Mitsuya-Sora/fibonacci_api/edit/main/app/Http/Controllers/CalculationsController.php
 
