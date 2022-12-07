@@ -41,7 +41,7 @@ PHPはunsigned intに対応しておらず、例n=99の時`218922995834555169026
 
 実行例3
 
-`curl -X GET -H "Content-Type: application/json" "https://fibonacci-api-328.herokuapp.com/fibo?n=99"`
+`curl -X GET -H "Content-Type: application/json" "https://fibonacci-api-328.herokuapp.com/fibo?n=3.5"`
 
 出力例３
 
@@ -56,7 +56,7 @@ https://github.com/Mitsuya-Sora/fibonacci_api/edit/main/app/Services/Calculation
 
 https://github.com/Mitsuya-Sora/fibonacci_api/edit/main/routes/api.php
 
-
+https://github.com/Mitsuya-Sora/fibonacci_api/blob/main/app/Exceptions/Handler.php
 
 ## テストファイル
 
