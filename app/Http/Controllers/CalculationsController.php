@@ -19,17 +19,11 @@ class CalculationsController extends Controller
         (string) $queryParameter = $request->input('n');
 
         if (!$queryParameter){
-            return response()->json([
-                "status" => 400,
-                "message" => "Bad Request. Query parameter 'n' is required."
-            ], Response::HTTP_BAD_REQUEST);
+            abort(400, 'Query parameter \'n\' is required.');
         }
 
         if (!$this->calculationService->isNaturalNumber($queryParameter)){
-            return response()->json([
-                "status" => 400,
-                "message" => "Bad Request. Query parameter 'n' should be a natural number."
-            ], Response::HTTP_BAD_REQUEST);
+            abort(400, 'Query parameter \'n\' should be a natural number.');
         }
 
         $nthFibonacci = $this->calculationService->getFibonacci($queryParameter);
